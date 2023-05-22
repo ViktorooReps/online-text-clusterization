@@ -76,7 +76,7 @@ def fit_ensemble(x: np.ndarray, y: np.ndarray, *, n_estimators: int) -> VotingCl
 
 
 class Solution:
-    encoder = Encoder.load(Path('onnx/main.pkl'))
+    encoder = Encoder.load(Path('main.pkl'))
     estimator = None
 
     history_feats = []
